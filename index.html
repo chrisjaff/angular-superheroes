@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <title>Superhero Phone Book</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="app.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body ng-controller = 'supersCtrl as vm'>
-
-  <script src="app.js"></script>
+  <h2>Heroes</h2>
+  <div ng-repeat = "super in vm.supers">
+    <p> Hero: {{$index + 1}}. {{super}}</p>
+  </div>
 </body>
 </html>
