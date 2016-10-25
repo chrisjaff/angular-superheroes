@@ -12,5 +12,12 @@
   <div ng-repeat = "super in vm.supers">
     <p> Hero: {{$index + 1}}. {{super}}</p>
   </div>
+<div>
+  <div>
+  <input type="text" ng-model="vm.showSupers">
+  <button ng-click="vm.showTodo()"> Search </button>
+  <p>User input: {{vm.name}}</p>
+</div>
+</div>
 </body>
 </html>
